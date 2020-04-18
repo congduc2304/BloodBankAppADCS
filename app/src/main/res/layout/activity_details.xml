@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Activity.DetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#d50000"
+        app:titleTextColor="#f9f6f5"
+        android:title="Tìm người hiến"
+        android:id="@+id/toolbardienthoai">
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imgAnhChitiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blood_bank_ic_launcher_foreground"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/txvTenChitiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BB000000"
+            android:text="Tên bệnh nhân"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:padding="5dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:text="Cần nhóm máu : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txvNhommauchitiet"
+                android:textSize="20sp"
+                android:text=" AB+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:text="Số liên lạc : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txvSdtchitiet"
+                android:textSize="20sp"
+                android:text=" 0123456789"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:text="Ngày đăng : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txvNgaydangchitiet"
+                android:textSize="20sp"
+                android:text=" 20/1/2020 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:padding="3dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Division:" />-->
+
+        <!--            <Spinner-->
+        <!--                android:layout_marginLeft="42dp"-->
+        <!--                android:id="@+id/inputDivision"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:entries="@array/division_list">-->
+        <!--            </Spinner>-->
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txvEmailchitiet"
+                android:textSize="20sp"
+                android:text=" nhanvip@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hiến máu là cứu mạng. Máu của bạn hiến cho là cứu cánh trong trường hợp khẩn cấp và cho những người cần điều trị lâu dài. Nhiều người sẽ không còn sống ngày hôm nay nếu những người hiến máu nhân đạo không hiến tặng cho máu của họ."/>
+    </LinearLayout>
+</LinearLayout>

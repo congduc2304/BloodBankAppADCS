@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.FindDonors">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#d50000"
+        app:title="Tìm người hiến"
+        app:titleTextColor="#f9f6f5"
+        android:id="@+id/toolbardienthoai">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="Chọn nhóm máu :" />
+
+            <Spinner
+                android:id="@+id/btngetBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Blood_Group"
+                android:padding="10dp">
+            </Spinner>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="Choose your Division:" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/btngetDivison"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:entries="@array/division_list"-->
+<!--                android:padding="10dp"></Spinner>-->
+<!--        </LinearLayout>-->
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Tìm kiếm "
+            android:backgroundTint="#d50000"
+            android:background="@drawable/btn"
+            android:id="@+id/btnSearch"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <GridView
+            android:layout_marginTop="20dp"
+            android:id="@+id/showDonorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Home">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmanghinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#d50000"
+                android:theme="?attr/actionBarTheme">
+                <TextView
+                    android:background="@drawable/bd_edt"
+                    android:textColorHint="#B3ADAD"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="Trang chủ"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#fff">
+                </TextView>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:onClick="Update"
+                    android:padding="13dp"
+                    android:src="@drawable/update"
+                    android:tint="#fff"></ImageView>
+            </androidx.appcompat.widget.Toolbar>
+
+            <!--        chen quang cao -->
+            <!--        <ViewFlipper-->
+            <!--            android:id="@+id/viewFlipper"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="200dp"/>-->
+            <!--        chen hinh anh -->
+            <!--        <ImageView-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:padding="5dp"-->
+            <!--            android:src="@drawable/ic_blood_transfusion"-->
+            <!--            android:layout_width="70dp"-->
+            <!--            android:layout_height="70dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <GridView
+                    android:id="@+id/gdvDSnguoidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="1"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_thanhmenu">
+            <ListView
+                android:layout_gravity="bottom"
+                android:id="@+id/listviewmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

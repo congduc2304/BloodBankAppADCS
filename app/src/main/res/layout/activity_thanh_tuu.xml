@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ThanhTuuActivity">
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/ShowInof"-->
+<!--        android:visibility="gone"-->
+<!--        android:text="You are not a donor. Be a donor first to achieve!"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#d50000"
+        app:titleTextColor="#f9f6f5"
+        app:title="Thành tựu hiến máu"
+        android:id="@+id/toolbardienthoai">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/donorAchiev"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/donateInfo"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Hôm nay bạn đã tham gia hiến máu chưa ?"
+            android:backgroundTint="#d50000"
+            android:background="@drawable/btn"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/yesnolayout"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnYes"
+                android:text="Đã tham gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Vẵn chưa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/nextDonate"
+            android:gravity="center"
+            android:backgroundTint="@color/primary_dark"
+            android:background="@drawable/circle"
+            android:text="34 days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="#d50000"
+                    android:background="@drawable/btn"
+                    android:textColor="@android:color/white"
+                    android:text="Tổng cộng hiến:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/settotalDonate"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#d50000"
+                    android:background="@drawable/circle"
+                    android:text="1 lần"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="#d50000"
+                    android:background="@drawable/btn"
+                    android:textColor="@android:color/white"
+                    android:text="Lần hiến cuối cùng:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/setLastDonate"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#d50000"
+                    android:background="@drawable/circle"
+                    android:text="12/12/2018"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

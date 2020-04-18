@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AboutUs">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#d50000"
+        app:titleTextColor="#f9f6f5"
+        app:title="Thông tin về chúng tôi"
+        android:id="@+id/toolbardienthoai">
+    </androidx.appcompat.widget.Toolbar>
+    <!--    <ImageView-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:src="@drawable/boarder"-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp" />-->
+
+    <TextView
+        android:id="@+id/txtv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:linksClickable="true"
+        android:padding="20dp"
+        android:text="This is a demo projects on blood donation and collecting. Our Team Members are: Ly Minh Nhan and Nguyen Cong Duc"
+        android:textSize="18sp" />
+
+</LinearLayout>
